@@ -1,0 +1,60 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CTMediator (44)
+  - FFAPIsKit (1.0.1):
+    - FFToolsKit
+  - FFAuthorKit_Category (1.0.0):
+    - CTMediator
+    - FFAPIsKit
+  - FFToolsKit (1.0):
+    - AFNetworking (~> 3.1.0)
+    - FMDB (~> 2.7.2)
+    - MBProgressHUD (~> 1.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - FFAuthorKit_Category (from `../`)
+
+SPEC REPOS:
+  https://github.com/Chj1995/FFSpecs.git:
+    - FFAPIsKit
+    - FFToolsKit
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - AFNetworking
+    - CTMediator
+    - FMDB
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  FFAuthorKit_Category:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
+  FFAPIsKit: 976d8680ff2a47dc46cd9624675233b018c4ca03
+  FFAuthorKit_Category: addd096aeac06d6f241c43ef826728e994026c4e
+  FFToolsKit: 2a616aeaeea70827e722bd92b7bd52b40ab0ab3d
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: f0c0a713bdfc647bfdee792ad5c8e29b8c3a0c26
+
+COCOAPODS: 1.9.3

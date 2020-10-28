@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2B6BD22B150D2C0EF74B8B12 /* Pods-FFAuthorKit_Category_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAuthorKit_Category_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FFAuthorKit_Category_Tests/Pods-FFAuthorKit_Category_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B9AFD4F1D645575FFC954CF /* FFAuthorKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FFAuthorKit_Category.podspec; path = ../FFAuthorKit_Category.podspec; sourceTree = "<group>"; };
+		3B9AFD4F1D645575FFC954CF /* FFAuthorKit_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FFAuthorKit_Category.podspec; path = ../FFAuthorKit_Category.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* FFAuthorKit_Category_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFAuthorKit_Category_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,13 +60,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72500489B34F24C24013DC48 /* Pods-FFAuthorKit_Category_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAuthorKit_Category_Example.release.xcconfig"; path = "Target Support Files/Pods-FFAuthorKit_Category_Example/Pods-FFAuthorKit_Category_Example.release.xcconfig"; sourceTree = "<group>"; };
-		77250EFF33C27D97296E0E9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		77250EFF33C27D97296E0E9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96B0AC21FBDA1D637D3D0D05 /* Pods_FFAuthorKit_Category_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAuthorKit_Category_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		998EBEA8719BA05797598418 /* Pods-FFAuthorKit_Category_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAuthorKit_Category_Example.debug.xcconfig"; path = "Target Support Files/Pods-FFAuthorKit_Category_Example/Pods-FFAuthorKit_Category_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A6229124A3FCACCEAB66FAA8 /* Pods-FFAuthorKit_Category_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAuthorKit_Category_Tests.release.xcconfig"; path = "Target Support Files/Pods-FFAuthorKit_Category_Tests/Pods-FFAuthorKit_Category_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BC268DA73C780FE7F478181B /* Pods_FFAuthorKit_Category_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAuthorKit_Category_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1CB9F442D3F1FB74585AD4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CD1CB9F442D3F1FB74585AD4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				2B6BD22B150D2C0EF74B8B12 /* Pods-FFAuthorKit_Category_Tests.debug.xcconfig */,
 				A6229124A3FCACCEAB66FAA8 /* Pods-FFAuthorKit_Category_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,11 +324,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FFAuthorKit_Category_Example/Pods-FFAuthorKit_Category_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/FFAPIsKit/FFAPIsKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FFAuthorKit_Category/FFAuthorKit_Category.framework",
+				"${BUILT_PRODUCTS_DIR}/FFToolsKit/FFToolsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFAPIsKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFAuthorKit_Category.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
